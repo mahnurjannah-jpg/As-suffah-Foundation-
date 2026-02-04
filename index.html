@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>আস সুফ্ফাহ ফাউন্ডেশন বাংলাদেশ</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+    --navy:#001f3f;
+    --sky:#87CEEB;
+    --white:#fff;
+    --soft:#f0faff;
+    --dark:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.7;
+    color:var(--dark);
+    background:#fff;
+}
+
+/* HERO */
+.hero{
+    position:relative;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:url("hero-bg.png") center/cover no-repeat;
+    filter:brightness(40%);
+    z-index:-1;
+}
+.hero img{width:120px;margin-bottom:15px;}
+.hero h1{font-size:2.5rem;}
+.hero p{
+    margin-top:10px;
+    font-size:1.2rem;
+    border-bottom:3px solid var(--sky);
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+/* GENERAL */
+section{
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+.title{
+    text-align:center;
+    font-size:2rem;
+    color:var(--navy);
+    margin-bottom:40px;
+    position:relative;
+}
+.title::after{
+    content:'';
+    width:60px;
+    height:4px;
+    background:var(--sky);
+    position:absolute;
+    left:50%;
+    bottom:-10px;
+    transform:translateX(-50%);
+}
+.box{
+    background:var(--soft);
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    border-left:6px solid var(--navy);
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    border-top:4px solid var(--sky);
+}
+
+/* TEAM */
+.team{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+.member{
+    background:var(--navy);
+    color:white;
+    padding:20px;
+    width:240px;
+    border-radius:15px;
+    text-align:center;
+}
+.member h4{color:var(--sky);}
+
+/* FORM */
+.form-box{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    max-width:600px;
+    margin:30px auto 0;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+form input{
+    width:100%;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+form button{
+    width:100%;
+    padding:12px;
+    background:var(--navy);
+    color:white;
+    border:none;
+    border-radius:25px;
+    font-size:1rem;
+    cursor:pointer;
+}
+
+/* CONTACT */
+.contact{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+.contact a{color:var(--sky);text-decoration:none;}
+
+@media(max-width:768px){
+    .hero h1{font-size:1.8rem;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <img src="logo.png" alt="Assuffah Logo">
+        <h1>আস সুফ্ফাহ ফাউন্ডেশন বাংলাদেশ</h1>
+        <p>সহানুভূতির পথে, মানবতার পাশে</p>
+    </div>
+</div>
+
+<!-- INTRO -->
+<section>
+    <div class="box">
+        <h2>সংক্ষিপ্ত পরিচিতি</h2>
+        <p>
+আস সুফ্ফাহ ফাউন্ডেশন একটি সম্পূর্ণ অরাজনৈতিক ও সেবামূলক সংগঠন, যার লক্ষ্য ও উদ্দেশ্য সৃষ্টির সেবা—
+অসহায়, দরিদ্র ও অভাবগ্রস্ত মানুষের সহযোগিতা, ক্ষুধার্তদের আহার যোগানো, শীতার্তদের বস্ত্র দান,
+অসুস্থদের চিকিৎসা, এতিম ও পথশিশুদের সহায়তা ও শিক্ষা ব্যবস্থা, সমাজে দয়া মানবতা ও একতার বার্তা ছড়ানো,
+তরুণদের সেবামূলক কাজে উৎসাহিত করা এবং শিক্ষা ও দাওয়ামূলক কার্যক্রম পরিচালনা করা।
+        </p>
+    </div>
+</section>
+
+
+ </p>
+<section style="background:var(--soft);">
+    <h2 class="title">লক্ষ্য, উদ্দেশ্য ও আদর্শ</h2>
+    <div class="grid">
+        <div class="card"><strong>মিশন:</strong><br>সৃষ্টির সেবা</div>
+        
+        <div class="card"><strong>ভিশন (Vision):</strong><br>একটি মানবিক, ন্যায়ভিত্তিক ও সহানুভূতিশীল সমাজ গঠন করা—যেখানে কেউ ক্ষুধার্ত, অবহেলিত বা নিরাশ্রয় থাকবে না।</div>
+        
+        <div class="card"><strong>আদর্শ:</strong><br>স্রষ্টার ইবাদত ও সৃষ্টির খেদমতের মাধ্যমে পরকালের মুক্তি কামনা</div>
+        <div class="card"><strong>প্রধান লক্ষ্য:</strong><br>স্রষ্টার ইবাদত ও সৃষ্টির খেদমত</div>
+    </div>
+</section>
+    </div>
+</section>
+<section style="padding: 60px 20px;">
+    <style>
+        /* এনিমেশনের প্রাথমিক অবস্থা */
+        .value-card {
+            background: rgba(255,255,255,0.1); 
+            padding: 10px; 
+            border-radius: 10px; 
+            border: 1px solid var(--sky);
+            opacity: 0; /* শুরুতে অদৃশ্য থাকবে */
+            transform: translateY(30px); /* কিছুটা নিচে থাকবে */
+            transition: all 0.6s ease-out; /* এনিমেশন স্পিড */
+        }
+
+        /* এনিমেশন চালু হলে অবস্থা */
+        .value-card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <div style="
+        background-color: var(--navy); 
+        color: var(--white); 
+        padding: 40px 30px; 
+        border-radius: 20px; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        box-shadow: 0 10px 30px rgba(0, 31, 63, 0.2);
+        border-bottom: 6px solid var(--sky);">
+        
+        <h2 style="
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 1.8rem; 
+            color: var(--sky);">
+            মূল্যবোধ
+        </h2>
+        
+        <div style="
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+            gap: 15px; 
+            text-align: center;">
+            
+            <div class="value-card">মানবিকতা</div>
+            <div class="value-card">সদাচার ও সততা</div>
+            <div class="value-card">সহানুভূতি</div>
+            <div class="value-card">ন্যায়পরায়ণতা</div>
+            <div class="value-card">দায়িত্বশীলতা</div>
+            <div class="value-card">সমাজমুখী দৃষ্টি</div>
+            <div class="value-card">সহযোগিতা ও একতা</div>
+            
+        </div>
+    </div>
+</section>
+
+<script>
+    const observerOptions = {
+        threshold: 0.2 // ২০% স্ক্রিনে আসলে এনিমেশন শুরু হবে
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // একটু দেরি করে করে (delay) একটা একটা ভেসে উঠবে
+                setTimeout(() => {
+                    entry.target.classList.add('show');
+                }, index * 150); // প্রতিটির মাঝে ১৫০ মিলিসেকেন্ড গ্যাপ
+            }
+        });
+    }, observerOptions);
+
+    // সব কার্ডকে অবজার্ভারের আওতায় নিয়ে আসা
+    document.querySelectorAll('.value-card').forEach((card) => {
+        observer.observe(card);
+    });
+</script>
+    </ul>
+</section>
+
+<section style="padding: 60px 20px; background-color: var(--light-blue);">
+    <h2 style="text-align: center; color: var(--navy); margin-bottom: 40px; font-size: 2rem;">দান ও সহযোগিতা</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto;">
+        
+        <div style="background: var(--white); padding: 30px; border-radius: 20px; border: 2px solid var(--navy); box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="font-size: 40px;">🇧🇩</span>
+                <h3 style="color: var(--navy); margin-top: 10px;">স্থানীয় কার্যক্রমের দান</h3>
+            </div>
+            <p style="text-align: center; color: #555; font-style: italic; margin-bottom: 20px;">"আপনার দান বদলে দিতে পারে একটি জীবন, একটি ভবিষ্যৎ।"</p>
+            
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: var(--navy); border-bottom: 2px solid var(--sky); display: inline-block; margin-bottom: 10px;">খাতসমূহ:</h4>
+                <ul style="list-style: none; padding-left: 5px; color: #444;">
+                    <li>✅ শিক্ষা সহায়তা</li>
+                    <li>✅ এতিম ও পথশিশু</li>
+                    <li>✅ চিকিৎসা সহায়তা</li>
+                    <li>✅ খাদ্য ও বস্ত্র বিতরণ</li>
+                    <li>✅ দুর্যোগকালীন ত্রাণ</li>
+                </ul>
+            </div>
+
+            <div style="background: var(--soft-blue); padding: 15px; border-radius: 10px; border-left: 5px solid var(--sky);">
+                <h4 style="color: var(--navy);">দান মাধ্যম:</h4>
+                <p><strong>বিকাশ / নগদ:</strong> 01715-762391</p>
+                <p style="font-size: 0.9rem; color: #777;">ব্যাংক তথ্য: (শীঘ্রই যোগ করা হবে)</p>
+            </div>
+        </div>
+
+        <div style="background: #000; color: #fff; padding: 30px; border-radius: 20px; border-bottom: 8px solid #007a3d; box-shadow: 0 10px 20px rgba(0,0,0,0.2);">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <span style="font-size: 40px;">🇵🇸</span>
+                <h3 style="color: var(--sky); margin-top: 10px;">ফিলিস্তিনের জন্য দান</h3>
+            </div>
+            <p style="text-align: center; color: #ddd; font-size: 0.95rem; margin-bottom: 20px;">ফিলিস্তিনের মানুষের পাশে দাঁড়াতে এবং তাদের মানবিক সহায়তা প্রদান করতে আপনার সাহায্য অত্যন্ত গুরুত্বপূর্ণ।</p>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 15px; border-radius: 10px; border-left: 5px solid #ee2a35;">
+                <h4 style="color: var(--sky);">দান মাধ্যম:</h4>
+                <p><strong>বিকাশ / নগদ:</strong> 01715-XXXXXX</p>
+                <p style="font-size: 0.9rem; color: #bbb;">ব্যাংক তথ্য: (শীঘ্রই যোগ করা হবে)</p>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 15px; text-align: center; color: #aaa;">#StandWithPalestine</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="padding: 40px 20px;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        
+        <button onclick="togglePolicy()" style="
+            width: 100%;
+            background-color: var(--navy);
+            color: var(--sky);
+            padding: 20px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+            <span>📜 দান গ্রহণের নীতিমালা</span>
+            <span id="arrow" style="transition: 0.3s;">▼</span>
+        </button>
+
+        <div id="policyContent" style="
+            display: none; 
+            background: var(--light-blue); 
+            padding: 30px; 
+            border-radius: 0 0 15px 15px; 
+            border: 2px solid var(--navy);
+            border-top: none;
+            line-height: 1.8;
+            color: #333;">
+            
+            <p style="margin-bottom: 20px; font-weight: bold; color: var(--navy);">
+                আমাদের আস সুফফাহ ফাউন্ডেশন মানবসেবা ও সৎ উদ্যোগকে এগিয়ে নিতে একটি স্বচ্ছ ও সুন্দর দান ব্যবস্থাপনা অনুসরণ করে। এখানে মূলত দু’ধরনের দান গ্রহণ করা হয়:
+            </p>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: var(--navy);">১) নিয়মিত সদস্যদের দান</h4>
+                <p>সংগঠনের নিয়মিত সদস্যরা মাসিক কার্যক্রমকে এগিয়ে নিতে প্রতি মাসে নির্দিষ্ট পরিমাণ দান প্রদান করেন। এতে মানবিক সহায়তা ও শিক্ষা কার্যক্রম শৃঙ্খলার সাথে পরিচালিত হয়।</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h4 style="color: var(--navy);">২) সাধারণ মানুষের দান</h4>
+                <p>যারা সদস্য নন, তারা সামর্থ্য অনুযায়ী যখন ইচ্ছে দান করতে পারেন। এটি সম্পূর্ণ স্বেচ্ছামূলক। মানবতার খাতিরে যে যতটুকু পারেন, ততটুকুই আমাদের কাছে মূল্যবান।</p>
+            </div>
+
+            <div style="background: white; padding: 20px; border-radius: 10px; border-left: 5px solid var(--sky);">
+                <h4 style="color: var(--navy); margin-bottom: 10px;">🛡️ স্বচ্ছতা ও হিসাব ব্যবস্থা</h4>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li>✅ প্রতিটি দান রশিদসহ গ্রহণ করা হয়।</li>
+                    <li>✅ প্রাপ্ত সব দান নির্দিষ্ট রেজিস্টারে লিখে রাখা হয়।</li>
+                    <li>✅ দাতারা চাইলে যেকোনো সময় দানের হিসাব দেখে নিতে পারবেন।</li>
+                </ul>
+            </div>
+
+            <p style="text-align: center; margin-top: 25px; font-weight: bold; color: var(--navy);">
+                "সহানুভূতির পথে, মানবতার পাশে।"
+            </p>
+        </div>
+    </div>
+</section>
+
+<script>
+    function togglePolicy() {
+        var content = document.getElementById("policyContent");
+        var arrow = document.getElementById("arrow");
+        
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            arrow.style.transform = "rotate(180deg)";
+        } else {
+            content.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+        }
+    }
+</script>
+
+<!-- ACTIVITIES -->
+<section>
+    <h2 class="title">চলমান কার্যক্রম</h2>
+    <div class="grid">
+        <div class="card">দরিদ্র ও অসহায় মানুষের সর্বাত্মক সহযোগিতা</div>
+        <div class="card">এতিম ও পথশিশুদের লালন-পালন ব্যবস্থাপনা</div>
+        <div class="card">ধর্মীয় ও জাগতিক শিক্ষায় সহযোগিতা</div>
+        <div class="card">নৈতিকতা ও ভালোবাসা ছড়িয়ে দেওয়া</div>
+        <div class="card">দুর্যোগকবলিত এলাকায় আর্থিক সহায়তা</div>
+        <div class="card">দেশ ও বিদেশে নির্যাতিত মানুষের পাশে দাঁড়ানো</div>
+    </div>
+</section>
+
+<!-- PREVIOUS WORK -->
+<section>
+    <h2 class="title">পূর্ববর্তী কার্যক্রম</h2>
+    <p style="max-width:900px;margin:auto;text-align:center;">
+অসহায় শিক্ষার্থীদের ভরণপোষণ, বই-পুস্তক ও শিক্ষা উপকরণ সরবরাহ এবং এতিম শিশুদের আর্থিক সহায়তা প্রদান করা হয়েছে।
+ভবিষ্যতে এই মানবিক কার্যক্রম আরও বিস্তৃত করার দৃঢ় প্রত্যয় আমাদের রয়েছে।
+    </p>
+</section>
+
+<!-- TEAM -->
+<section>
+    <h2 class="title">পরিচালনা কমিটি</h2>
+    <div class="team">
+        <div class="member"><h4>সভাপতি</h4><p>মুহাম্মাদ তানভীর আহমাদ</p></div>
+        <div class="member"><h4>সহ-সভাপতি</h4><p>মুহাম্মাদ মহীউদ্দীন</p></div>
+        <div class="member"><h4>সাধারণ সম্পাদক</h4><p>আনাস হুসাইন যশোরী</p></div>
+    </div>
+    <p style="text-align:center;margin-top:20px;">
+মোট ১৩ জনের স্থায়ী কমিটি, ৬ জনের শুরা কমিটি ও উপদেষ্টা পরিষদ রয়েছে।
+    </p>
+</section>
+<section style="background:var(--soft); padding: 50px 20px;">
+    <h2 class="title" style="text-align:center;">সদস্য হওয়ার শর্তাবলি</h2>
+    
+    <ul style="max-width:600px; margin:20px auto; line-height: 1.8; font-size: 1.1rem; color: #333;">
+        <li>সংগঠনের উদ্দেশ্য ও আদর্শের সঙ্গে একাত্মতা</li>
+        <li>সমাজকল্যাণমূলক কাজে সম্পৃক্ত থাকা</li>
+        <li>রাজনৈতিক ইস্যুতে সংগঠন ব্যবহার না করা</li>
+        <li>অর্পিত দায়িত্ব যথাযথভাবে পালন</li>
+    </ul>
+
+    <div style="text-align:center; margin-top: 40px;">
+        <p style="margin-bottom: 20px; font-weight: bold; color: var(--navy);">সংগঠনের সদস্য হতে নিচের বাটনে ক্লিক করে ফর্মটি পূরণ করুন</p>
+        
+        <a href="https://forms.gle/CJSLWKRLyRz24SWy5" target="_blank" 
+           style="display: inline-block; padding: 15px 40px; background: var(--navy); color: var(--white); 
+                  text-decoration: none; font-weight: bold; border-radius: 50px; 
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: 0.3s;">
+            <i class="fas fa-file-alt"></i> অনলাইন সদস্য ফর্ম
+        </a>
+    </div>
+</section>
+
+<div class="contact" style="text-align:center; padding: 40px 20px; background:var(--navy); color:var(--white);">
+    <h2>যোগাযোগ</h2>
+    <p>ফরিদাবাদ, গেন্ডারিয়া, ঢাকা ১২০৪</p>
+    <p>📞 ০১৭১৫-৭৬২৩৯১</p>
+    <p>✉️ assuffahfoundation@gmail.com</p>
+    <p>Facebook: Assuffah Foundation Bangladesh</p>
+</div>
+
+</body>
+</html>
